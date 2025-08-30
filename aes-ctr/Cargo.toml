@@ -13,7 +13,7 @@ categories = ["cryptography", "no-std"]
 stream-cipher = { git = "https://github.com/laicj2025/traits-stream-cipher-v0.3.0.git", branch = "master" }
 
 [target.'cfg(not(all(target_feature = "aes", target_feature = "sse2", target_feature = "ssse3", any(target_arch = "x86_64", target_arch = "x86"))))'.dependencies]
-#ctr = "0.3" #TODO
+ctr = { git = "https://github.com/laicj2025/stream-ciphers-ctr-v0.3.0.git", branch = "master" }
 aes-soft = { git = "https://github.com/laicj2025/aes-soft.git", branch = "master" }
 
 [target.'cfg(all(target_feature = "aes", target_feature = "sse2", target_feature = "ssse3", any(target_arch = "x86_64", target_arch = "x86")))'.dependencies]
