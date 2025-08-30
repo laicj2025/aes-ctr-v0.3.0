@@ -10,12 +10,12 @@ keywords = ["crypto", "stream-cipher", "trait"]
 categories = ["cryptography", "no-std"]
 
 [dependencies]
-stream-cipher = "0.3"
-block-cipher-trait = "0.6"
+stream-cipher = { git = "https://github.com/laicj2025/traits-stream-cipher-v0.3.0.git", branch = "master" }
+block-cipher-trait = { git = "https://github.com/RustCrypto/traits.git", tag = "block-cipher-trait-v0.6.0" }
 
 [dev-dependencies]
 aes = "0.3"
-stream-cipher = { version = "0.3", features = ["dev"] }
+stream-cipher = { git = "https://github.com/laicj2025/traits-stream-cipher-v0.3.0.git", branch = "master" }
 
 [badges]
 travis-ci = { repository = "RustCrypto/stream-ciphers" }
