@@ -10,7 +10,7 @@ keywords = ["crypto", "stream-cipher", "trait"]
 categories = ["cryptography", "no-std"]
 
 [dependencies]
-stream-cipher = "0.3"
+stream-cipher = { git = "https://github.com/laicj2025/traits-stream-cipher-v0.3.0.git", branch = "master" }
 
 [target.'cfg(not(all(target_feature = "aes", target_feature = "sse2", target_feature = "ssse3", any(target_arch = "x86_64", target_arch = "x86"))))'.dependencies]
 ctr = "0.3"
@@ -20,7 +20,7 @@ aes-soft = { git = "https://github.com/laicj2025/aes-soft.git", branch = "master
 aesni = "0.6"
 
 [dev-dependencies]
-stream-cipher = { version = "0.3", features = ["dev"] }
+stream-cipher = { git = "https://github.com/laicj2025/traits-stream-cipher-v0.3.0.git", branch = "master" }
 
 [badges]
 travis-ci = { repository = "RustCrypto/stream-ciphers" }
