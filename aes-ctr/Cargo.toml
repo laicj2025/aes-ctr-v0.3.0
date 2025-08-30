@@ -17,7 +17,7 @@ ctr = "0.3"
 aes-soft = { git = "https://github.com/laicj2025/aes-soft.git", branch = "master" }
 
 [target.'cfg(all(target_feature = "aes", target_feature = "sse2", target_feature = "ssse3", any(target_arch = "x86_64", target_arch = "x86")))'.dependencies]
-aesni = "0.6"
+aesni = { git = "https://github.com/laicj2025/aesni-v0.6.0.git", branch = "master" }
 
 [dev-dependencies]
 stream-cipher = { git = "https://github.com/laicj2025/traits-stream-cipher-v0.3.0.git", branch = "master" }
